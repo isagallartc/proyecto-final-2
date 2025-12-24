@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glow Wellness – Proyecto</title>
+  <meta name="description" content="Proyecto final: landing estilo wellness con secciones responsivas y media queries." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Promo banner -->
+  <div class="promo">
+    <div class="container promo__row">
+      <p>ENVÍO GRATIS EN COMPRAS +$999 · suscríbete y ahorra</p>
+      <p>ENVÍO GRATIS EN COMPRAS +$999 · suscríbete y ahorra</p>
+      <p>ENVÍO GRATIS EN COMPRAS +$999 · suscríbete y ahorra</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__content">
+      <a class="logo" href="#inicio">glow</a>
+
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#ingredientes">Lo que dejamos fuera</a>
+        <a href="#newsletter">Suscríbete</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="link" href="#shop">Carrito (0)</a>
+        <a class="btn" href="#shop">Comprar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="tag">meet glow Burn Gummies</p>
+          <h1>Un upgrade que se siente.</h1>
+          <p class="muted">
+            Fórmula pensada para tu rutina. Diseño limpio, secciones claras y responsivo con media queries.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#shop">Shop now</a>
+            <a class="btn btn--ghost" href="#beneficios">Ver beneficios</a>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Producto destacado">
+          <div class="product__img">
+            <div class="placeholder">
+              <span>Imagen de producto</span>
+              <small>(puedes agregar una foto después)</small>
+            </div>
+          </div>
+
+          <div class="product__meta">
+            <div>
+              <p class="product__name">Glow Burn Gummies</p>
+              <p class="muted">Soporte diario*</p>
+            </div>
+            <p class="price">$549</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Resultados reales, sin complicarte</h2>
+          <p class="muted">Bloques tipo ícono + texto.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="icon">★</div>
+            <h3>Expert formulado</h3>
+            <p class="muted">Ingredientes seleccionados para tu rutina.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon">✓</div>
+            <h3>Validado</h3>
+            <p class="muted">Procesos y estándares de calidad.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon">⚗︎</div>
+            <h3>Ciencia + sabor</h3>
+            <p class="muted">Porque sí se puede: rico y funcional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section id="shop" class="section alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Shop</h2>
+          <a class="link" href="#">Ver todo</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="card">
+            <div class="card__img">IMG</div>
+            <h3>Glow Matcha</h3>
+            <p class="muted">Energía & metabolismo*</p>
+            <div class="card__footer">
+              <span class="price">$499</span>
+              <a class="btn btn--small" href="#">Agregar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">IMG</div>
+            <h3>Glow Chill</h3>
+            <p class="muted">De-stress gummies*</p>
+            <div class="card__footer">
+              <span class="price">$499</span>
+              <a class="btn btn--small" href="#">Agregar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">IMG</div>
+            <h3>Glow Debloat</h3>
+            <p class="muted">Digestivo & enzimas*</p>
+            <div class="card__footer">
+              <span class="price">$549</span>
+              <a class="btn btn--small" href="#">Agregar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">IMG</div>
+            <h3>Glow Burn</h3>
+            <p class="muted">Body composition*</p>
+            <div class="card__footer">
+              <span class="price">$549</span>
+              <a class="btn btn--small" href="#">Agregar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we leave out -->
+    <section id="ingredientes" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Lo que dejamos fuera</h2>
+          <p class="muted">Lista simple estilo wellness.</p>
+        </div>
+
+        <div class="bad-grid">
+          <div class="bad">Parabenos</div>
+          <div class="bad">Colorantes sintéticos</div>
+          <div class="bad">FD&C dyes</div>
+          <div class="bad">Talc</div>
+          <div class="bad">Gluten</div>
+          <div class="bad">Silicon dioxide</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section alt">
+      <div class="container newsletter">
+        <div>
+          <h2>Sé la primera en enterarte</h2>
+          <p class="muted">Suscríbete para lanzamientos y promos.</p>
+        </div>
+
+        <form class="form" onsubmit="return false;">
+          <input type="email" placeholder="Email" />
+          <button class="btn" type="submit">Suscribirme</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h3>Shop</h3>
+        <a href="#shop">Gummies</a>
+        <a href="#shop">Cápsulas</a>
+        <a href="#shop">Bundles</a>
+      </div>
+      <div>
+        <h3>Aprende</h3>
+        <a href="#">Blog</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div>
+        <h3>Legales</h3>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Accesibilidad</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="muted">© 2025 Glow Wellness · Proyecto de práctica</p>
+    </div>
+  </footer>
+</body>
+</html>
