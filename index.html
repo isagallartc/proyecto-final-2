@@ -1,175 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Glow Wellness – Proyecto</title>
-  <meta name="description" content="Proyecto final: landing estilo wellness con secciones responsivas y media queries." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glow Wellness | Proyecto Final</title>
+  <meta name="description" content="Proyecto final: landing wellness hecha con HTML y CSS, responsiva con media queries y secciones tipo e-commerce.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Promo banner -->
-  <div class="promo">
-    <div class="container promo__row">
-      <p>ENVÍO GRATIS EN COMPRAS +$999 · suscríbete y ahorra</p>
-      <p>ENVÍO GRATIS EN COMPRAS +$999 · suscríbete y ahorra</p>
-      <p>ENVÍO GRATIS EN COMPRAS +$999 · suscríbete y ahorra</p>
-    </div>
-  </div>
-
   <!-- Header -->
   <header class="header">
-    <div class="container header__content">
-      <a class="logo" href="#inicio">glow</a>
+    <div class="container header__inner">
+      <a class="logo" href="#">Glow Wellness</a>
 
       <nav class="nav">
         <a href="#shop">Shop</a>
-        <a href="#beneficios">Beneficios</a>
-        <a href="#ingredientes">Lo que dejamos fuera</a>
-        <a href="#newsletter">Suscríbete</a>
+        <a href="#benefits">Beneficios</a>
+        <a href="#facts">Ingredientes</a>
+        <a href="#faq">FAQ</a>
       </nav>
 
-      <div class="header__actions">
-        <a class="link" href="#shop">Carrito (0)</a>
-        <a class="btn" href="#shop">Comprar</a>
-      </div>
+      <a class="btn btn--small" href="#newsletter">Suscribirme</a>
     </div>
   </header>
 
   <main>
     <!-- Hero -->
-    <section id="inicio" class="hero">
+    <section class="hero">
       <div class="container hero__grid">
-        <div class="hero__text">
-          <p class="tag">meet glow Burn Gummies</p>
-          <h1>Un upgrade que se siente.</h1>
+        <div class="hero__copy">
+          <p class="badge">New · Wellness</p>
+          <h1>Tu rutina, pero más simple.</h1>
           <p class="muted">
-            Fórmula pensada para tu rutina. Diseño limpio, secciones claras y responsivo con media queries.
+            Landing educativa estilo marca wellness. Hecha con HTML + CSS, responsiva con media queries.
           </p>
 
-          <div class="hero__actions">
-            <a class="btn" href="#shop">Shop now</a>
-            <a class="btn btn--ghost" href="#beneficios">Ver beneficios</a>
+          <div class="hero__cta">
+            <a class="btn" href="#shop">Ver productos</a>
+            <a class="btn btn--ghost" href="#benefits">Cómo funciona</a>
           </div>
-        </div>
 
-        <div class="hero__card" aria-label="Producto destacado">
-          <div class="product__img">
-            <div class="placeholder">
-              <span>Imagen de producto</span>
-              <small>(puedes agregar una foto después)</small>
+          <div class="hero__stats">
+            <div class="stat">
+              <p class="stat__num">2</p>
+              <p class="muted">breakpoints</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">Grid</p>
+              <p class="muted">tarjetas</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">Fixed</p>
+              <p class="muted">cookies</p>
             </div>
           </div>
+        </div>
 
-          <div class="product__meta">
-            <div>
-              <p class="product__name">Glow Burn Gummies</p>
-              <p class="muted">Soporte diario*</p>
+        <div class="hero__card">
+          <div class="hero__img" aria-hidden="true"></div>
+          <div class="hero__cardBody">
+            <h3>Glow Starter</h3>
+            <p class="muted">Paquete de ejemplo para tu proyecto.</p>
+            <div class="priceRow">
+              <span class="price">$499</span>
+              <span class="muted">MXN</span>
             </div>
-            <p class="price">$549</p>
+            <button class="btn btn--full" type="button">Agregar (demo)</button>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Beneficios -->
-    <section id="beneficios" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2>Resultados reales, sin complicarte</h2>
-          <p class="muted">Bloques tipo ícono + texto.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature">
-            <div class="icon">★</div>
-            <h3>Expert formulado</h3>
-            <p class="muted">Ingredientes seleccionados para tu rutina.</p>
-          </article>
-
-          <article class="feature">
-            <div class="icon">✓</div>
-            <h3>Validado</h3>
-            <p class="muted">Procesos y estándares de calidad.</p>
-          </article>
-
-          <article class="feature">
-            <div class="icon">⚗︎</div>
-            <h3>Ciencia + sabor</h3>
-            <p class="muted">Porque sí se puede: rico y funcional.</p>
-          </article>
         </div>
       </div>
     </section>
 
     <!-- Shop -->
-    <section id="shop" class="section alt">
+    <section id="shop" class="section">
       <div class="container">
         <div class="section__head">
           <h2>Shop</h2>
-          <a class="link" href="#">Ver todo</a>
+          <p class="muted">Tarjetas con CSS Grid, listas para e-commerce (demo).</p>
         </div>
 
         <div class="product-grid">
-          <article class="card">
-            <div class="card__img">IMG</div>
-            <h3>Glow Matcha</h3>
-            <p class="muted">Energía & metabolismo*</p>
-            <div class="card__footer">
-              <span class="price">$499</span>
-              <a class="btn btn--small" href="#">Agregar</a>
+          <article class="product">
+            <div class="product__img" aria-hidden="true"></div>
+            <h3>Gummies</h3>
+            <p class="muted">Formato fácil de integrar a tu rutina.</p>
+            <div class="product__bottom">
+              <span class="price">$299</span>
+              <button class="btn btn--small" type="button">Ver</button>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card__img">IMG</div>
-            <h3>Glow Chill</h3>
-            <p class="muted">De-stress gummies*</p>
-            <div class="card__footer">
-              <span class="price">$499</span>
-              <a class="btn btn--small" href="#">Agregar</a>
+          <article class="product">
+            <div class="product__img product__img--2" aria-hidden="true"></div>
+            <h3>Cápsulas</h3>
+            <p class="muted">Diseño minimal + estructura clara.</p>
+            <div class="product__bottom">
+              <span class="price">$349</span>
+              <button class="btn btn--small" type="button">Ver</button>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card__img">IMG</div>
-            <h3>Glow Debloat</h3>
-            <p class="muted">Digestivo & enzimas*</p>
-            <div class="card__footer">
-              <span class="price">$549</span>
-              <a class="btn btn--small" href="#">Agregar</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card__img">IMG</div>
-            <h3>Glow Burn</h3>
-            <p class="muted">Body composition*</p>
-            <div class="card__footer">
-              <span class="price">$549</span>
-              <a class="btn btn--small" href="#">Agregar</a>
+          <article class="product">
+            <div class="product__img product__img--3" aria-hidden="true"></div>
+            <h3>Bundles</h3>
+            <p class="muted">Ideal para practicar layouts responsivos.</p>
+            <div class="product__bottom">
+              <span class="price">$699</span>
+              <button class="btn btn--small" type="button">Ver</button>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- What we leave out -->
-    <section id="ingredientes" class="section">
+    <!-- Benefits -->
+    <section id="benefits" class="section alt">
       <div class="container">
         <div class="section__head">
-          <h2>Lo que dejamos fuera</h2>
-          <p class="muted">Lista simple estilo wellness.</p>
+          <h2>Beneficios</h2>
+          <p class="muted">Sección tipo “features” con grid adaptable.</p>
         </div>
 
-        <div class="bad-grid">
-          <div class="bad">Parabenos</div>
-          <div class="bad">Colorantes sintéticos</div>
-          <div class="bad">FD&C dyes</div>
-          <div class="bad">Talc</div>
-          <div class="bad">Gluten</div>
-          <div class="bad">Silicon dioxide</div>
+        <div class="benefit-grid">
+          <article class="benefit">
+            <h3>Diseño limpio</h3>
+            <p class="muted">Espaciados consistentes, tipografía y tarjetas.</p>
+          </article>
+          <article class="benefit">
+            <h3>Responsivo</h3>
+            <p class="muted">Se adapta a desktop, tablet y móvil con media queries.</p>
+          </article>
+          <article class="benefit">
+            <h3>Componentes</h3>
+            <p class="muted">Header, hero, grids, newsletter, footer.</p>
+          </article>
+          <article class="benefit">
+            <h3>Interacción</h3>
+            <p class="muted">FAQ tipo acordeón + banner de cookies (fixed).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ingredientes / Facts -->
+    <section id="facts" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Ingredientes clave</h2>
+          <p class="muted">Lo esencial, sin relleno (demo).</p>
+        </div>
+
+        <div class="facts-grid">
+          <article class="fact">
+            <h3>Extracto botánico</h3>
+            <p class="muted">Apoyo a tu rutina diaria.*</p>
+          </article>
+          <article class="fact">
+            <h3>Vitaminas</h3>
+            <p class="muted">Pensado para uso constante.*</p>
+          </article>
+          <article class="fact">
+            <h3>Sin azúcar añadida</h3>
+            <p class="muted">Sabor agradable, enfoque funcional.*</p>
+          </article>
+        </div>
+
+        <p class="disclaimer muted">
+          *Este sitio es un proyecto educativo. No constituye recomendación médica.
+        </p>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Lo que dicen</h2>
+          <a class="link" href="#newsletter">Suscribirme</a>
+        </div>
+
+        <div class="review-grid">
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <p>“Se ve limpio y en móvil se adapta perfecto.”</p>
+            <p class="muted">— Isa</p>
+          </article>
+
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <p>“El layout de productos en grid quedó súper claro.”</p>
+            <p class="muted">— Equipo</p>
+          </article>
+
+          <article class="review">
+            <p class="stars">★★★★☆</p>
+            <p>“Me gustó el sticky header y el CTA.”</p>
+            <p class="muted">— Sensei</p>
+          </article>
         </div>
       </div>
     </section>
@@ -179,7 +207,7 @@
       <div class="container newsletter">
         <div>
           <h2>Sé la primera en enterarte</h2>
-          <p class="muted">Suscríbete para lanzamientos y promos.</p>
+          <p class="muted">Suscríbete para lanzamientos y promos (demo).</p>
         </div>
 
         <form class="form" onsubmit="return false;">
@@ -188,34 +216,97 @@
         </form>
       </div>
     </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p class="muted">Preguntas frecuentes</p>
+        </div>
+
+        <div class="faq">
+          <button class="faq__q" aria-expanded="false" type="button">
+            ¿Este sitio es real?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">
+            <p class="muted">No. Es un proyecto de práctica para HTML/CSS y diseño responsivo.</p>
+          </div>
+
+          <button class="faq__q" aria-expanded="false" type="button">
+            ¿Qué tecnologías usa?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">
+            <p class="muted">HTML, CSS (Flexbox/Grid), media queries y un script pequeño para el FAQ.</p>
+          </div>
+
+          <button class="faq__q" aria-expanded="false" type="button">
+            ¿Cómo se publica?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">
+            <p class="muted">Con GitHub Pages desde la rama main.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <h3>Shop</h3>
+          <a href="#shop">Gummies</a>
+          <a href="#shop">Cápsulas</a>
+          <a href="#shop">Bundles</a>
+        </div>
+
+        <div>
+          <h3>Aprende</h3>
+          <a href="#benefits">Blog</a>
+          <a href="#faq">FAQ</a>
+          <a href="#newsletter">Contacto</a>
+        </div>
+
+        <div>
+          <h3>Legales</h3>
+          <a href="#faq">Privacidad</a>
+          <a href="#faq">Términos</a>
+          <a href="#faq">Accesibilidad</a>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <p class="muted">© 2025 Glow Wellness · Proyecto de práctica</p>
+      </div>
+    </footer>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <h3>Shop</h3>
-        <a href="#shop">Gummies</a>
-        <a href="#shop">Cápsulas</a>
-        <a href="#shop">Bundles</a>
-      </div>
-      <div>
-        <h3>Aprende</h3>
-        <a href="#">Blog</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contacto</a>
-      </div>
-      <div>
-        <h3>Legales</h3>
-        <a href="#">Privacidad</a>
-        <a href="#">Términos</a>
-        <a href="#">Accesibilidad</a>
-      </div>
+  <!-- Cookies banner (fixed) -->
+  <div class="cookie" id="cookieBanner">
+    <div class="cookie__content">
+      <p>Usamos cookies para mejorar la experiencia. Este es un ejemplo para el proyecto.</p>
+      <button class="btn btn--small" id="acceptCookies" type="button">Aceptar</button>
     </div>
+  </div>
 
-    <div class="container footer__bottom">
-      <p class="muted">© 2025 Glow Wellness · Proyecto de práctica</p>
-    </div>
-  </footer>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll(".faq__q").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        btn.nextElementSibling.classList.toggle("open");
+        btn.querySelector(".faq__icon").textContent = expanded ? "+" : "–";
+      });
+    });
+
+    // Cookies banner
+    const banner = document.getElementById("cookieBanner");
+    const accept = document.getElementById("acceptCookies");
+    accept.addEventListener("click", () => banner.classList.add("hide"));
+  </script>
 </body>
 </html>
