@@ -1,312 +1,304 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Glow Wellness | Proyecto Final</title>
-  <meta name="description" content="Proyecto final: landing wellness hecha con HTML y CSS, responsiva con media queries y secciones tipo e-commerce.">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home – estilo Lemme (replica)</title>
 
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container header__inner">
-      <a class="logo" href="#">Glow Wellness</a>
+    <!-- Fonts (parecido vibe: bold + friendly) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-      <nav class="nav">
-        <a href="#shop">Shop</a>
-        <a href="#benefits">Beneficios</a>
-        <a href="#facts">Ingredientes</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-      <a class="btn btn--small" href="#newsletter">Suscribirme</a>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="badge">New · Wellness</p>
-          <h1>Tu rutina, pero más simple.</h1>
-          <p class="muted">
-            Landing educativa estilo marca wellness. Hecha con HTML + CSS, responsiva con media queries.
-          </p>
-
-          <div class="hero__cta">
-            <a class="btn" href="#shop">Ver productos</a>
-            <a class="btn btn--ghost" href="#benefits">Cómo funciona</a>
-          </div>
-
-          <div class="hero__stats">
-            <div class="stat">
-              <p class="stat__num">2</p>
-              <p class="muted">breakpoints</p>
-            </div>
-            <div class="stat">
-              <p class="stat__num">Grid</p>
-              <p class="muted">tarjetas</p>
-            </div>
-            <div class="stat">
-              <p class="stat__num">Fixed</p>
-              <p class="muted">cookies</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__card">
-          <div class="hero__img" aria-hidden="true"></div>
-          <div class="hero__cardBody">
-            <h3>Glow Starter</h3>
-            <p class="muted">Paquete de ejemplo para tu proyecto.</p>
-            <div class="priceRow">
-              <span class="price">$499</span>
-              <span class="muted">MXN</span>
-            </div>
-            <button class="btn btn--full" type="button">Agregar (demo)</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Shop -->
-    <section id="shop" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2>Shop</h2>
-          <p class="muted">Tarjetas con CSS Grid, listas para e-commerce (demo).</p>
-        </div>
-
-        <div class="product-grid">
-          <article class="product">
-            <div class="product__img" aria-hidden="true"></div>
-            <h3>Gummies</h3>
-            <p class="muted">Formato fácil de integrar a tu rutina.</p>
-            <div class="product__bottom">
-              <span class="price">$299</span>
-              <button class="btn btn--small" type="button">Ver</button>
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product__img product__img--2" aria-hidden="true"></div>
-            <h3>Cápsulas</h3>
-            <p class="muted">Diseño minimal + estructura clara.</p>
-            <div class="product__bottom">
-              <span class="price">$349</span>
-              <button class="btn btn--small" type="button">Ver</button>
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product__img product__img--3" aria-hidden="true"></div>
-            <h3>Bundles</h3>
-            <p class="muted">Ideal para practicar layouts responsivos.</p>
-            <div class="product__bottom">
-              <span class="price">$699</span>
-              <button class="btn btn--small" type="button">Ver</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits -->
-    <section id="benefits" class="section alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Beneficios</h2>
-          <p class="muted">Sección tipo “features” con grid adaptable.</p>
-        </div>
-
-        <div class="benefit-grid">
-          <article class="benefit">
-            <h3>Diseño limpio</h3>
-            <p class="muted">Espaciados consistentes, tipografía y tarjetas.</p>
-          </article>
-          <article class="benefit">
-            <h3>Responsivo</h3>
-            <p class="muted">Se adapta a desktop, tablet y móvil con media queries.</p>
-          </article>
-          <article class="benefit">
-            <h3>Componentes</h3>
-            <p class="muted">Header, hero, grids, newsletter, footer.</p>
-          </article>
-          <article class="benefit">
-            <h3>Interacción</h3>
-            <p class="muted">FAQ tipo acordeón + banner de cookies (fixed).</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ingredientes / Facts -->
-    <section id="facts" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2>Ingredientes clave</h2>
-          <p class="muted">Lo esencial, sin relleno (demo).</p>
-        </div>
-
-        <div class="facts-grid">
-          <article class="fact">
-            <h3>Extracto botánico</h3>
-            <p class="muted">Apoyo a tu rutina diaria.*</p>
-          </article>
-          <article class="fact">
-            <h3>Vitaminas</h3>
-            <p class="muted">Pensado para uso constante.*</p>
-          </article>
-          <article class="fact">
-            <h3>Sin azúcar añadida</h3>
-            <p class="muted">Sabor agradable, enfoque funcional.*</p>
-          </article>
-        </div>
-
-        <p class="disclaimer muted">
-          *Este sitio es un proyecto educativo. No constituye recomendación médica.
+  <body>
+    <!-- Announcement / Marquee -->
+    <div class="announce">
+      <div class="announce__inner">
+        <p>
+          FREE SHIPPING OVER $50 <span>•</span> subscribe & save up to 35% off <span>•</span>
+          FREE SHIPPING OVER $50 <span>•</span> subscribe & save up to 35% off <span>•</span>
+          FREE SHIPPING OVER $50 <span>•</span> subscribe & save up to 35% off
         </p>
       </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="section alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Lo que dicen</h2>
-          <a class="link" href="#newsletter">Suscribirme</a>
-        </div>
-
-        <div class="review-grid">
-          <article class="review">
-            <p class="stars">★★★★★</p>
-            <p>“Se ve limpio y en móvil se adapta perfecto.”</p>
-            <p class="muted">— Isa</p>
-          </article>
-
-          <article class="review">
-            <p class="stars">★★★★★</p>
-            <p>“El layout de productos en grid quedó súper claro.”</p>
-            <p class="muted">— Equipo</p>
-          </article>
-
-          <article class="review">
-            <p class="stars">★★★★☆</p>
-            <p>“Me gustó el sticky header y el CTA.”</p>
-            <p class="muted">— Sensei</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section id="newsletter" class="section alt">
-      <div class="container newsletter">
-        <div>
-          <h2>Sé la primera en enterarte</h2>
-          <p class="muted">Suscríbete para lanzamientos y promos (demo).</p>
-        </div>
-
-        <form class="form" onsubmit="return false;">
-          <input type="email" placeholder="Email" />
-          <button class="btn" type="submit">Suscribirme</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2>FAQ</h2>
-          <p class="muted">Preguntas frecuentes</p>
-        </div>
-
-        <div class="faq">
-          <button class="faq__q" aria-expanded="false" type="button">
-            ¿Este sitio es real?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a">
-            <p class="muted">No. Es un proyecto de práctica para HTML/CSS y diseño responsivo.</p>
-          </div>
-
-          <button class="faq__q" aria-expanded="false" type="button">
-            ¿Qué tecnologías usa?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a">
-            <p class="muted">HTML, CSS (Flexbox/Grid), media queries y un script pequeño para el FAQ.</p>
-          </div>
-
-          <button class="faq__q" aria-expanded="false" type="button">
-            ¿Cómo se publica?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a">
-            <p class="muted">Con GitHub Pages desde la rama main.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__grid">
-        <div>
-          <h3>Shop</h3>
-          <a href="#shop">Gummies</a>
-          <a href="#shop">Cápsulas</a>
-          <a href="#shop">Bundles</a>
-        </div>
-
-        <div>
-          <h3>Aprende</h3>
-          <a href="#benefits">Blog</a>
-          <a href="#faq">FAQ</a>
-          <a href="#newsletter">Contacto</a>
-        </div>
-
-        <div>
-          <h3>Legales</h3>
-          <a href="#faq">Privacidad</a>
-          <a href="#faq">Términos</a>
-          <a href="#faq">Accesibilidad</a>
-        </div>
-      </div>
-
-      <div class="container footer__bottom">
-        <p class="muted">© 2025 Glow Wellness · Proyecto de práctica</p>
-      </div>
-    </footer>
-  </main>
-
-  <!-- Cookies banner (fixed) -->
-  <div class="cookie" id="cookieBanner">
-    <div class="cookie__content">
-      <p>Usamos cookies para mejorar la experiencia. Este es un ejemplo para el proyecto.</p>
-      <button class="btn btn--small" id="acceptCookies" type="button">Aceptar</button>
     </div>
-  </div>
 
-  <script>
-    // FAQ accordion
-    document.querySelectorAll(".faq__q").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const expanded = btn.getAttribute("aria-expanded") === "true";
-        btn.setAttribute("aria-expanded", String(!expanded));
-        btn.nextElementSibling.classList.toggle("open");
-        btn.querySelector(".faq__icon").textContent = expanded ? "+" : "–";
-      });
-    });
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__row">
+        <a class="logo" href="#">
+          <span class="logo__dot"></span>
+          <span class="logo__text">lemme</span>
+        </a>
 
-    // Cookies banner
-    const banner = document.getElementById("cookieBanner");
-    const accept = document.getElementById("acceptCookies");
-    accept.addEventListener("click", () => banner.classList.add("hide"));
-  </script>
-</body>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#benefits" class="nav__pill">Mood, Sleep, Energy</a>
+          <a href="#benefits" class="nav__pill">Weight Management</a>
+          <a href="#benefits" class="nav__pill">Women's Health</a>
+          <a href="#benefits" class="nav__pill">Beauty & Digestion</a>
+          <a href="#bundle" class="nav__cta">Build a Bundle</a>
+        </nav>
+
+        <div class="header__actions">
+          <button class="icon-btn" aria-label="Buscar">
+            <!-- simple icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Zm0-2a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Zm8.7 4.1-4.2-4.2 1.4-1.4 4.2 4.2-1.4 1.4Z"
+              />
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="Cuenta">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"
+              />
+            </svg>
+          </button>
+          <a class="bag" href="#cart" aria-label="Bolsa">
+            <span class="bag__label">Bag</span>
+            <span class="bag__count">0</span>
+          </a>
+
+          <button class="menu-btn" aria-label="Abrir menú" onclick="toggleMobileNav()">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile nav -->
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <div class="container mobile-nav__inner">
+          <a href="#benefits" class="mobile-nav__link">Mood, Sleep, Energy</a>
+          <a href="#benefits" class="mobile-nav__link">Weight Management</a>
+          <a href="#benefits" class="mobile-nav__link">Women's Health</a>
+          <a href="#benefits" class="mobile-nav__link">Beauty & Digestion</a>
+          <a href="#bundle" class="mobile-nav__btn">Build a Bundle</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="hero__kicker">meet</p>
+            <h1 class="hero__title">lemme Burn Gummies</h1>
+
+            <p class="hero__sub">
+              Clinically-studied ingredients to support healthy body composition and energy—without sacrificing taste.*
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#shop">Shop Now</a>
+              <a class="btn btn--ghost" href="#learn">Learn More</a>
+            </div>
+
+            <div class="hero__badges">
+              <span class="badge">3rd-party tested</span>
+              <span class="badge">No FD&amp;C dyes</span>
+              <span class="badge">So delicious</span>
+            </div>
+          </div>
+
+          <div class="hero__media" aria-label="Producto destacado">
+            <div class="product-card">
+              <div class="product-card__bg"></div>
+
+              <!-- Imagen tipo “bottle” (cámbiala por la tuya si quieres) -->
+              <img
+                class="product-card__img"
+                src="https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=1200&q=80"
+                alt="Producto en frasco sobre fondo claro"
+                loading="eager"
+              />
+
+              <div class="product-card__meta">
+                <div>
+                  <p class="product-card__name">BURN</p>
+                  <p class="product-card__desc">Body composition gummies*</p>
+                </div>
+                <a class="chip" href="#shop">From $30</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative blobs -->
+        <div class="blob blob--1" aria-hidden="true"></div>
+        <div class="blob blob--2" aria-hidden="true"></div>
+      </section>
+
+      <!-- Real results -->
+      <section class="results" id="benefits">
+        <div class="container">
+          <div class="section-head">
+            <h2>lemme get real results</h2>
+            <p>The twist? So delicious you won’t believe they’re supplements.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">
+                <!-- simple illustration style icon -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 3h10v3H7V3Zm1 5h8l-1 13H9L8 8Zm2 3v2h4v-2h-4Z" />
+                </svg>
+              </div>
+              <h3>Expert formulated</h3>
+              <p>Clinically-studied ingredients curated for real-world goals.*</p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2 1 7l11 5 9-4.09V17h2V7L12 2Zm0 12L3 10v8l9 4 9-4v-8l-9 4Z"
+                  />
+                </svg>
+              </div>
+              <h3>Validated by 3rd party testing</h3>
+              <p>Quality &amp; transparency—because details matter.</p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"
+                  />
+                </svg>
+              </div>
+              <h3>Science-backed innovation</h3>
+              <p>Benefits you can feel—made to fit your routine.*</p>
+            </article>
+          </div>
+
+          <div class="stars">
+            <div class="stars__left">
+              <span class="stars__big">★★★★★</span>
+              <p><strong>Thousands of 5-star testimonials</strong></p>
+            </div>
+            <a class="link" href="#reviews">Read reviews</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- What we leave out -->
+      <section class="leaveout" id="learn">
+        <div class="container leaveout__grid">
+          <div class="leaveout__copy">
+            <h2>what we leave out</h2>
+            <p>Because not all vitamins are created equal.</p>
+            <a class="btn btn--primary" href="#learn-more">Learn More</a>
+          </div>
+
+          <div class="leaveout__list">
+            <div class="leaveout__item">PARABENS</div>
+            <div class="leaveout__item">Silicon Dioxide</div>
+            <div class="leaveout__item">gluten</div>
+            <div class="leaveout__item">TALC</div>
+            <div class="leaveout__item">synthetic colors</div>
+            <div class="leaveout__item">FD&amp;C dyes</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote -->
+      <section class="quote">
+        <div class="container quote__wrap">
+          <div class="quote__media" aria-hidden="true">
+            <img
+              src="https://images.unsplash.com/photo-1520975958225-4d82f35e7df0?auto=format&fit=crop&w=1200&q=80"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <div class="quote__card">
+            <p class="quote__text">
+              “Years of seeking the perfect supplement led me to create my own health solution.”
+            </p>
+            <p class="quote__by">— Founder</p>
+            <p class="quote__sub">Lemme introduce you to the upgrade you can feel.</p>
+            <a class="btn btn--ghost" href="#shop">Shop all</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter" id="bundle">
+        <div class="container newsletter__grid">
+          <div>
+            <h2>be first to get the goods</h2>
+            <p>News, drops, and promos—straight to your inbox.</p>
+          </div>
+
+          <form class="form" action="#" onsubmit="event.preventDefault(); toast();">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <p class="fineprint container">
+          * These statements have not been evaluated by the Food and Drug Administration. This product is not intended
+          to diagnose, treat, cure or prevent any disease.
+        </p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer__grid">
+          <div>
+            <a class="logo logo--footer" href="#">
+              <span class="logo__dot"></span>
+              <span class="logo__text">lemme</span>
+            </a>
+            <p class="muted">© 2025 Your Brand. All rights reserved.</p>
+          </div>
+
+          <div class="footer__cols">
+            <div>
+              <h4>Learn</h4>
+              <a href="#">Blog</a>
+              <a href="#">Loyalty &amp; Rewards</a>
+              <a href="#">Subscribe</a>
+            </div>
+            <div>
+              <h4>Get Help</h4>
+              <a href="#">Help/FAQ</a>
+              <a href="#">Contact</a>
+              <a href="#">Find Us</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+      Listo ✨ ya quedaste suscrit@ (fake demo)
+    </div>
+
+    <script>
+      function toggleMobileNav() {
+        const nav = document.getElementById("mobileNav");
+        nav.hidden = !nav.hidden;
+      }
+
+      function toast() {
+        const t = document.getElementById("toast");
+        t.hidden = false;
+        clearTimeout(window.__t);
+        window.__t = setTimeout(() => (t.hidden = true), 2200);
+      }
+    </script>
+  </body>
 </html>
+
