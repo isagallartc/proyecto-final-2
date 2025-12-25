@@ -1,518 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lemme Replica – Proyecto Final</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lemme (home clone)</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <div class="topbar__track">
-      <span>FREE SHIPPING OVER $50</span>
-      <span class="dot">•</span>
-      <span>subscribe & save up to 35% off</span>
-      <span>subscribe &amp; save up to 35%</span>
-      <span class="dot">•</span>
-      <span>clinically studied ingredients</span>
-      <span class="dot">•</span>
-      <span>FREE SHIPPING OVER $50</span>
-      <span class="dot">•</span>
-      <span>subscribe & save up to 35% off</span>
-      <span>subscribe &amp; save up to 35%</span>
-    </div>
-  </div>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__inner">
-      <div class="logo">
-        <span class="logo__dot"></span>
-        <span class="logo__text">lemme</span>
-      </div>
-
-      <nav class="nav">
-        <a>Mood, Sleep, Energy</a>
-        <a>Weight Management</a>
-        <a>Women's Health</a>
-        <a>Beauty & Digestion</a>
-        <a class="nav__cta">Build a Bundle</a>
-        <a href="#">Mood, Sleep, Energy</a>
-        <a href="#">Weight Management</a>
-        <a href="#">Women’s Health</a>
-        <a href="#">Beauty &amp; Digestion</a>
-        <a class="nav__cta" href="#">Build a Bundle</a>
-      </nav>
-
-      <div class="header__right">
-        <span>Bag</span>
-        <span class="bag">0</span>
-        <button class="icon-button" aria-label="Search">
-          <span>Search</span>
-        </button>
-        <button class="icon-button" aria-label="Account">
-          <span>Account</span>
-        </button>
-        <div class="bag-pill">
-          <span>Bag</span>
-          <span class="bag-count">0</span>
-        </div>
+  <body>
+    <!-- Top promo marquee -->
+    <div class="marquee" aria-label="promo">
+      <div class="marquee__track">
+        <span>FREE SHIPPING OVER $50</span><span class="dot">•</span>
+        <span>subscribe &amp; save up to 35% off</span><span class="dot">•</span>
+        <span>FREE SHIPPING OVER $50</span><span class="dot">•</span>
+        <span>subscribe &amp; save up to 35% off</span><span class="dot">•</span>
+        <span>FREE SHIPPING OVER $50</span><span class="dot">•</span>
+        <span>subscribe &amp; save up to 35% off</span><span class="dot">•</span>
       </div>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__grid">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__name">lemme</span>
+        </a>
 
-      <div class="hero__text">
-        <span class="hero__meet">MEET</span>
-        <h1>lemme Burn Gummies</h1>
-        <div class="hero__chips">
-          <span class="pill">New</span>
-          <span class="pill pill--outline">Best Seller</span>
-        </div>
-        <span class="hero__meet">MEET LEMME BURN</span>
-        <h1>Gummies to support body composition + energy.</h1>
-        <p>
-          Clinically-studied ingredients to support healthy body composition
-          and energy—without sacrificing taste.*
-          and sustained energy—without sacrificing taste.*
-        </p>
+        <nav class="nav" aria-label="primary">
+          <a class="pill" href="#benefits">Mood, Sleep, Energy</a>
+          <a class="pill" href="#benefits">Weight Management</a>
+          <a class="pill" href="#benefits">Women's Health</a>
+          <a class="pill" href="#benefits">Beauty &amp; Digestion</a>
+          <a class="pill pill--cta" href="#bundle">Build a Bundle</a>
+        </nav>
 
-        <div class="hero__buttons">
-          <a class="btn primary">Shop Now</a>
-          <a class="btn secondary">Learn More</a>
-          <a class="btn primary" href="#">Shop Now</a>
-          <a class="btn secondary" href="#">Learn More</a>
-        </div>
+        <div class="header__right">
+          <a class="link" href="#account">Account</a>
+          <a class="bag" href="#cart" aria-label="bag">
+            <span>Bag</span>
+            <span class="bag__count">0</span>
+          </a>
 
-        <div class="hero__badges">
-          <span>3rd-party tested</span>
-          <span>No FD&C dyes</span>
-          <span>No FD&amp;C dyes</span>
-          <span>So delicious</span>
+          <button class="burger" aria-label="open menu" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
 
-      <div class="hero__image">
-        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80" alt="Product">
-        <div class="hero__circle"></div>
-        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80" alt="Lemme Burn Gummies">
-        <div class="product__label">
-          <strong>BURN</strong>
-          <span>Body composition gummies*</span>
-          <div>
-            <strong>BURN</strong>
-            <span>Body composition gummies*</span>
-          </div>
-          <span class="price">From $30</span>
-        </div>
-        <div class="stat-grid">
-          <div>
-            <strong>6g</strong>
-            <span>nutrients per serving</span>
-          </div>
-          <div>
-            <strong>30</strong>
-            <span>gummies per jar</span>
-          </div>
-          <div>
-            <strong>4.8 ★</strong>
-            <span>reviews average</span>
-          </div>
+      <!-- Mobile menu -->
+      <div class="mobile" id="mobile" hidden>
+        <div class="container mobile__inner">
+          <a class="mobile__link" href="#benefits" onclick="toggleMenu()">Mood, Sleep, Energy</a>
+          <a class="mobile__link" href="#benefits" onclick="toggleMenu()">Weight Management</a>
+          <a class="mobile__link" href="#benefits" onclick="toggleMenu()">Women's Health</a>
+          <a class="mobile__link" href="#benefits" onclick="toggleMenu()">Beauty &amp; Digestion</a>
+          <a class="mobile__link mobile__link--cta" href="#bundle" onclick="toggleMenu()">Build a Bundle</a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- MEDIA MENTIONS -->
-  <section class="logo-strip">
-    <div class="container logo-strip__inner">
-      <span>As seen in</span>
-      <div class="logos">
-        <span>Vogue</span>
-        <span>Forbes</span>
-        <span>Women’s Health</span>
-        <span>Glamour</span>
-        <span>MindBodyGreen</span>
-        <span>Goop</span>
-      </div>
-    </div>
-  </section>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1 class="hero__h1">
+              <span class="hero__meet">meet</span>
+              lemme Burn Gummies
+            </h1>
 
-  <!-- RESULTS -->
-  <section class="results">
-  <!-- FAVORITES -->
-  <section class="best-sellers">
-    <div class="container">
-      <h2>lemme get real results</h2>
-      <p class="subtitle">The twist? So delicious you won’t believe they’re supplements.</p>
-      <div class="section-head">
-        <h2>Fan-favorite gummies</h2>
-        <a href="#" class="text-link">Shop all gummies</a>
-      </div>
-      <div class="product-grid">
-        <article class="product-card">
-          <span class="pill pill--outline">New</span>
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80" alt="Lemme Burn gummies">
-          </div>
-          <h3>Lemme Burn</h3>
-          <p>Metabolism + energy gummies.</p>
-          <div class="product-card__meta">
-            <span>$30</span>
-            <button class="btn tiny">Add</button>
-          </div>
-        </article>
-        <article class="product-card">
-          <span class="pill pill--outline">Best seller</span>
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Lemme Sleep gummies">
-          </div>
-          <h3>Lemme Sleep</h3>
-          <p>Dreamy gummies for deep rest.</p>
-          <div class="product-card__meta">
-            <span>$30</span>
-            <button class="btn tiny">Add</button>
-          </div>
-        </article>
-        <article class="product-card">
-          <span class="pill pill--outline">Bloat helper</span>
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Lemme Debloat gummies">
-          </div>
-          <h3>Lemme Debloat</h3>
-          <p>Gut support you can taste.</p>
-          <div class="product-card__meta">
-            <span>$30</span>
-            <button class="btn tiny">Add</button>
-          </div>
-        </article>
-        <article class="product-card">
-          <span class="pill pill--outline">Trending</span>
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=700&q=80" alt="Lemme Focus gummies">
-          </div>
-          <h3>Lemme Focus</h3>
-          <p>Sharper focus and clarity.</p>
-          <div class="product-card__meta">
-            <span>$30</span>
-            <button class="btn tiny">Add</button>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+            <p class="hero__p">
+              Clinically-studied ingredients to support healthy body composition and energy—without sacrificing taste.*
+            </p>
 
-  <!-- SHOP BY GOAL -->
-  <section class="goals">
-    <div class="container">
-      <div class="section-head">
-        <h2>Shop by goal</h2>
-        <a href="#" class="text-link">Shop all gummies</a>
-      </div>
-      <div class="goal-grid">
-        <article class="goal-card">
-          <h3>Mood + Stress</h3>
-          <p>Daily calm support you can taste.</p>
-        </article>
-        <article class="goal-card">
-          <h3>Sleep + Recovery</h3>
-          <p>Fall asleep faster, wake refreshed.</p>
-        </article>
-        <article class="goal-card">
-          <h3>Energy + Focus</h3>
-          <p>Plant-powered energy, no crash.</p>
-        </article>
-        <article class="goal-card">
-          <h3>Beauty + Digestion</h3>
-          <p>Glow from the inside out.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+            <a class="btn btn--primary" href="#shop">Shop Now</a>
 
-  <!-- RESULTS -->
-  <section class="results">
-    <div class="container results__grid">
-      <div>
-        <h2>lemme get real results</h2>
-        <p class="subtitle">The twist? So delicious you won’t believe they’re supplements.</p>
-        <div class="results__stats">
-          <div>
-            <strong>4.8/5</strong>
-            <span>average rating</span>
+            <div class="hero__chips">
+              <span class="chip">Morosil™</span>
+              <span class="chip">Black Ginger</span>
+              <span class="chip">B-Vitamins</span>
+            </div>
           </div>
-          <div>
-            <strong>500k+</strong>
-            <span>happy customers</span>
-          </div>
-          <div>
-            <strong>3rd party</strong>
-            <span>clinically studied</span>
+
+          <div class="hero__productCard" aria-label="product">
+            <div class="hero__productInner">
+              <img
+                class="hero__bottle"
+                src="https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=1600&q=80"
+                alt="Purple supplement bottle on white background"
+                loading="eager"
+              />
+            </div>
+
+            <div class="hero__meta">
+              <div class="meta__left">
+                <div class="meta__name">BURN</div>
+                <div class="meta__desc">Body composition gummies*</div>
+              </div>
+              <div class="meta__price">From $30</div>
+            </div>
           </div>
         </div>
-        <a class="btn secondary" href="#">See the science</a>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1582719478185-2f95b9b7b902?auto=format&fit=crop&w=600&q=80">
-          <img src="https://images.unsplash.com/photo-1582719478185-2f95b9b7b902?auto=format&fit=crop&w=600&q=80" alt="Expert formulated">
-          <h3>Expert formulated</h3>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f04b?auto=format&fit=crop&w=600&q=80">
-          <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f04b?auto=format&fit=crop&w=600&q=80" alt="Validated by testing">
-          <h3>Validated by 3rd party testing</h3>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1556228720-4b58f4b7c84a?auto=format&fit=crop&w=600&q=80">
-          <img src="https://images.unsplash.com/photo-1556228720-4b58f4b7c84a?auto=format&fit=crop&w=600&q=80" alt="Science-backed innovation">
-          <h3>Science-backed innovation</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- INGREDIENTS -->
-  <section class="ingredients">
-    <div class="container ingredients__grid">
-      <div>
-        <span class="pill">Ingredients</span>
-        <h2>Clinically studied, clean, and delicious.</h2>
-        <p>Every gummy is packed with real nutrients and zero synthetic dyes.</p>
-        <div class="ingredient-list">
-          <div>
-            <strong>Chromax®</strong>
-            <span>Supports healthy metabolism</span>
+      <!-- RESULTS -->
+      <section class="section" id="benefits">
+        <div class="container">
+          <h2 class="section__title">lemme get real results</h2>
+          <p class="section__sub">The twist? So delicious you won't believe they're supplements.</p>
+
+          <div class="results">
+            <!-- CARD 1 -->
+            <article class="result">
+              <div class="result__art" aria-hidden="true">
+                <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#F8F2FF"/>
+                      <stop offset="1" stop-color="#F0E4FF"/>
+                    </linearGradient>
+                    <linearGradient id="gloss1" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+                      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".35"/>
+                    </linearGradient>
+                    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#141414" flood-opacity=".12"/>
+                    </filter>
+                  </defs>
+
+                  <rect width="520" height="360" rx="34" fill="url(#bg1)"/>
+                  <ellipse cx="290" cy="290" rx="150" ry="58" fill="#7A2CFF" opacity=".18"/>
+
+                  <!-- tube -->
+                  <g filter="url(#softShadow)">
+                    <rect x="310" y="74" width="120" height="210" rx="34" fill="#141414" opacity=".86"/>
+                    <rect x="330" y="96" width="80" height="44" rx="16" fill="#ffffff" opacity=".88"/>
+                    <rect x="328" y="150" width="84" height="86" rx="20" fill="#ffffff" opacity=".12"/>
+                    <rect x="326" y="76" width="18" height="206" rx="9" fill="#ffffff" opacity=".12"/>
+                  </g>
+
+                  <!-- gummy -->
+                  <g filter="url(#softShadow)">
+                    <rect x="214" y="166" width="130" height="110" rx="48" fill="#FF3E6B" opacity=".92"/>
+                    <path d="M238 184c40-30 82-30 122 0v18c-40-26-82-26-122 0v-18z" fill="url(#gloss1)" opacity=".8"/>
+                    <circle cx="260" cy="232" r="10" fill="#ffffff" opacity=".18"/>
+                    <circle cx="312" cy="248" r="8" fill="#ffffff" opacity=".14"/>
+                  </g>
+
+                  <!-- hand -->
+                  <g filter="url(#softShadow)">
+                    <path d="M92 252c40-62 90-72 146-30 18 14 20 40 2 54l-88 66c-18 14-44 8-54-12l-18-34c-8-16-2-32 12-44z"
+                      fill="#ffffff" opacity=".92"/>
+                    <path d="M112 250c34-46 74-52 120-20 10 8 10 22 0 30l-78 58c-12 10-30 6-36-8l-10-22c-6-12-2-26 4-38z"
+                      fill="#ffffff" opacity=".55"/>
+                    <path d="M104 314c16 22 44 18 68 0" stroke="#141414" stroke-width="10" opacity=".18" stroke-linecap="round"/>
+                  </g>
+
+                  <!-- tiny sparkles -->
+                  <g opacity=".45">
+                    <path d="M140 92l10 18 18 10-18 10-10 18-10-18-18-10 18-10 10-18z" fill="#7A2CFF"/>
+                    <circle cx="204" cy="110" r="6" fill="#141414" opacity=".18"/>
+                    <circle cx="458" cy="124" r="7" fill="#7A2CFF" opacity=".25"/>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="result__title">Expert formulated</h3>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="result">
+              <div class="result__art" aria-hidden="true">
+                <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#F8F2FF"/>
+                      <stop offset="1" stop-color="#EEE0FF"/>
+                    </linearGradient>
+                    <filter id="softShadow2" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#141414" flood-opacity=".12"/>
+                    </filter>
+                    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
+                      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".35"/>
+                    </linearGradient>
+                  </defs>
+
+                  <rect width="520" height="360" rx="34" fill="url(#bg2)"/>
+                  <ellipse cx="260" cy="298" rx="170" ry="62" fill="#7A2CFF" opacity=".16"/>
+
+                  <!-- magnifier -->
+                  <g filter="url(#softShadow2)">
+                    <circle cx="250" cy="170" r="118" fill="url(#glass)"/>
+                    <circle cx="250" cy="170" r="118" fill="none" stroke="#141414" stroke-width="16" opacity=".86"/>
+                    <path d="M334 254l86 86" stroke="#141414" stroke-width="18" stroke-linecap="round" opacity=".86"/>
+                  </g>
+
+                  <!-- gummy inside -->
+                  <g filter="url(#softShadow2)">
+                    <rect x="182" y="126" width="136" height="110" rx="52" fill="#FF3E6B" opacity=".9"/>
+                    <path d="M200 144c38-28 84-28 120 0v18c-38-24-84-24-120 0v-18z" fill="#ffffff" opacity=".55"/>
+                    <circle cx="222" cy="200" r="9" fill="#ffffff" opacity=".16"/>
+                    <circle cx="290" cy="210" r="7" fill="#ffffff" opacity=".12"/>
+                  </g>
+
+                  <!-- strawberry hint -->
+                  <g filter="url(#softShadow2)">
+                    <path d="M92 206c0-50 38-78 74-78s74 28 74 78c0 58-44 116-74 116s-74-58-74-116z"
+                      fill="#FF3E6B" opacity=".22"/>
+                    <path d="M130 118c16-18 38-18 54 0" stroke="#141414" stroke-width="10" opacity=".18" stroke-linecap="round"/>
+                    <path d="M166 94l12 18" stroke="#141414" stroke-width="10" opacity=".18" stroke-linecap="round"/>
+                  </g>
+
+                  <!-- sparkle -->
+                  <g opacity=".4">
+                    <path d="M420 98l10 18 18 10-18 10-10 18-10-18-18-10 18-10 10-18z" fill="#7A2CFF"/>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="result__title">Validated by 3rd party testing</h3>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="result">
+              <div class="result__art" aria-hidden="true">
+                <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#F8F2FF"/>
+                      <stop offset="1" stop-color="#EFE1FF"/>
+                    </linearGradient>
+                    <filter id="softShadow3" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#141414" flood-opacity=".12"/>
+                    </filter>
+                    <linearGradient id="lip" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
+                      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".5"/>
+                    </linearGradient>
+                  </defs>
+
+                  <rect width="520" height="360" rx="34" fill="url(#bg3)"/>
+                  <ellipse cx="250" cy="296" rx="175" ry="62" fill="#7A2CFF" opacity=".16"/>
+
+                  <!-- cloud -->
+                  <g filter="url(#softShadow3)">
+                    <path d="M116 176c10-40 46-62 84-50 18-30 64-34 88-6 30-18 70-4 72 32 38-10 74 18 62 58H152c-52 0-68-52-36-84z"
+                      fill="#ffffff" opacity=".92"/>
+                    <path d="M156 192h250" stroke="#141414" stroke-width="14" opacity=".09" stroke-linecap="round"/>
+                  </g>
+
+                  <!-- mouth -->
+                  <g filter="url(#softShadow3)">
+                    <path d="M178 250c34 44 132 44 166 0" fill="#7A2CFF" opacity=".22"/>
+                    <path d="M190 248c26 26 114 26 140 0" stroke="#141414" stroke-width="18" stroke-linecap="round" opacity=".86"/>
+                    <path d="M212 260c24 18 72 18 96 0" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity=".35"/>
+                  </g>
+
+                  <!-- gummy “floating” -->
+                  <g filter="url(#softShadow3)">
+                    <rect x="340" y="120" width="110" height="92" rx="42" fill="#FF3E6B" opacity=".9"/>
+                    <path d="M354 136c32-22 66-22 96 0v16c-30-18-64-18-96 0v-16z" fill="url(#lip)" opacity=".7"/>
+                    <circle cx="364" cy="176" r="8" fill="#ffffff" opacity=".14"/>
+                  </g>
+
+                  <!-- sparkles -->
+                  <g opacity=".4">
+                    <path d="M96 110l10 18 18 10-18 10-10 18-10-18-18-10 18-10 10-18z" fill="#7A2CFF"/>
+                    <circle cx="452" cy="92" r="8" fill="#141414" opacity=".14"/>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="result__title">Science-backed innovation</h3>
+            </article>
           </div>
-          <div>
-            <strong>Sinetrol®</strong>
-            <span>Clinically studied citrus polyphenols</span>
+
+          <div class="testimonials">
+            <div class="testimonials__img" aria-hidden="true">
+              <svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter id="tShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#141414" flood-opacity=".10"/>
+                  </filter>
+                </defs>
+                <rect x="0" y="0" width="900" height="240" rx="34" fill="#ffffff" opacity=".75" filter="url(#tShadow)"/>
+                <circle cx="170" cy="128" r="68" fill="#7A2CFF" opacity=".18"/>
+                <rect x="290" y="78" width="460" height="18" rx="9" fill="#141414" opacity=".16"/>
+                <rect x="290" y="110" width="380" height="14" rx="7" fill="#141414" opacity=".12"/>
+                <rect x="290" y="134" width="340" height="14" rx="7" fill="#141414" opacity=".12"/>
+                <rect x="290" y="158" width="410" height="14" rx="7" fill="#141414" opacity=".12"/>
+              </svg>
+            </div>
+            <div class="testimonials__text">
+              <p class="stars">Thousands of 5-star testimonials ⭐⭐⭐⭐⭐</p>
+            </div>
           </div>
-          <div>
-            <strong>Vitamin B12</strong>
-            <span>Helps convert food to energy</span>
+        </div>
+      </section>
+
+      <!-- WHAT WE LEAVE OUT -->
+      <section class="section section--tight">
+        <div class="container leaveout">
+          <div class="leaveout__left">
+            <h2 class="section__title">what we leave out</h2>
+            <p class="section__sub">Because not all vitamins are created equal</p>
+            <a class="btn btn--ghost" href="#learnmore">Learn More</a>
+          </div>
+
+          <div class="leaveout__right">
+            <ul class="leaveout__list">
+              <li>PARABENS</li>
+              <li>Silicon Dioxide</li>
+              <li>gluten</li>
+              <li>TALC</li>
+              <li>synthetic colors</li>
+              <li>FD&amp;C dyes</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="ingredient-card">
-        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" alt="Ingredients lifestyle">
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- WHAT'S NOT INSIDE -->
-  <section class="clean">
-    <div class="container clean__grid">
-      <div>
-        <span class="pill">What we leave out</span>
-        <h2>Gummies without the junk.</h2>
-        <p>No fillers, no artificial flavors, and nothing you can’t pronounce.</p>
-      </div>
-      <div class="clean__list">
-        <div>
-          <strong>No gelatin</strong>
-          <span>Vegan-friendly formulas.</span>
+      <!-- QUOTE -->
+      <section class="section section--tight">
+        <div class="container quote">
+          <div class="quote__img">
+            <img
+              src="https://images.unsplash.com/photo-1520975958225-4d82f35e7df0?auto=format&fit=crop&w=1600&q=80"
+              alt="Founder portrait style placeholder"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="quote__card">
+            <h3 class="quote__h3">
+              "Years of seeking the perfect supplement led me to create my own health solution."
+            </h3>
+            <p class="quote__by">— Founder</p>
+            <p class="quote__sub">Lemme introduce you to the upgrade you can feel.</p>
+            <a class="btn btn--ghost" href="#shop">Shop all</a>
+          </div>
         </div>
-        <div>
-          <strong>No artificial dyes</strong>
-          <span>Just naturally derived colors.</span>
-        </div>
-        <div>
-          <strong>No added sugar</strong>
-          <span>Balanced sweetness from fruit.</span>
-        </div>
-        <div>
-          <strong>No fillers</strong>
-          <span>Only purposeful ingredients.</span>
+      </section>
+
+      <!-- ticker -->
+      <div class="ticker" aria-label="ticker">
+        <div class="ticker__track">
+          <span>ohmygoshwagandha</span><span>ohmygoshwagandha</span><span>ohmygoshwagandha</span><span>ohmygoshwagandha</span>
+          <span>ohmygoshwagandha</span><span>ohmygoshwagandha</span><span>ohmygoshwagandha</span><span>ohmygoshwagandha</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- BUNDLE -->
-  <section class="bundle">
-    <div class="container bundle__grid">
-      <div>
-        <span class="pill">Bundle &amp; Save</span>
-        <h2>Build your daily routine.</h2>
-        <p>Mix and match your favorite gummies. Save up to 35% when you subscribe.</p>
-        <a class="btn primary" href="#">Build a Bundle</a>
-      </div>
-      <div class="bundle__image">
-        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Gummy assortment">
-        <div class="bundle__tag">3+ products = 35% off</div>
-      </div>
-    </div>
-  </section>
+      <!-- SOCIAL + NEWSLETTER -->
+      <section class="section section--tight" id="bundle">
+        <div class="container social">
+          <div class="social__top">
+            <a class="social__title" href="#ig">lemme socialize</a>
+          </div>
 
-  <!-- STEPS -->
-  <section class="steps">
-    <div class="container">
-      <div class="section-head">
-        <h2>How it works</h2>
-        <a href="#" class="text-link">Learn more</a>
-      </div>
-      <div class="step-grid">
-        <article>
-          <span class="step-number">01</span>
-          <h3>Choose your gummies</h3>
-          <p>Pick the formulas that match your goals.</p>
-        </article>
-        <article>
-          <span class="step-number">02</span>
-          <h3>Build a bundle</h3>
-          <p>Save more when you add two or more products.</p>
-        </article>
-        <article>
-          <span class="step-number">03</span>
-          <h3>Subscribe + save</h3>
-          <p>Get deliveries on your schedule and never run out.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+          <h2 class="section__title">be first to get the goods</h2>
 
-  <!-- REVIEWS -->
-  <section class="reviews">
-    <div class="container">
-      <div class="section-head">
-        <h2>Lemme lovers</h2>
-        <a href="#" class="text-link">Read all reviews</a>
-      </div>
-      <div class="review-grid">
-        <article class="review">
-          <div class="review__rating">★★★★★</div>
-          <h3>“I feel lighter and energized.”</h3>
-          <p>“After two weeks I’m less bloated and have steady energy.”</p>
-          <span class="review__name">— Samantha</span>
-        </article>
-        <article class="review">
-          <div class="review__rating">★★★★★</div>
-          <h3>“The taste is unreal.”</h3>
-          <p>“Best tasting gummies I’ve tried. Fits into my routine.”</p>
-          <span class="review__name">— Liz</span>
-        </article>
-        <article class="review">
-          <div class="review__rating">★★★★☆</div>
-          <h3>“My new nightly ritual.”</h3>
-          <p>“Takes the edge off and helps me wind down.”</p>
-          <span class="review__name">— Ana</span>
-        </article>
-      </div>
-    </div>
-  </section>
+          <form class="form" onsubmit="event.preventDefault(); showThanks();">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
 
-  <!-- PROMO -->
-  <section class="promo">
-    <div class="container promo__inner">
-      <div>
-        <span class="pill">Subscribe</span>
-        <h2>Subscribe + save up to 35%.</h2>
-        <p>Flexible delivery, cancel anytime, and free shipping on every order.</p>
-      </div>
-      <a class="btn secondary" href="#">Start subscription</a>
-    </div>
-  </section>
+          <p class="thanks" id="thanks" hidden>Thank you for subscribing!</p>
 
-  <!-- DISCOUNT -->
-  <section class="discount">
-    <div class="container discount__inner">
-      <div>
-        <span class="pill pill--outline">Limited time</span>
-        <h2>Get 15% off your first order.</h2>
-        <p>Use code LEMMELOVE at checkout.</p>
-      </div>
-      <a class="btn primary" href="#">Shop now</a>
-    </div>
-  </section>
+          <div class="social__icons" aria-label="social links">
+            <a href="#ig" aria-label="Instagram">IG</a>
+            <a href="#tt" aria-label="TikTok">TT</a>
+            <a href="#x" aria-label="X">X</a>
+            <a href="#fb" aria-label="Facebook">FB</a>
+          </div>
 
-  <!-- NEWSLETTER -->
-  <section class="newsletter">
-    <div class="container newsletter__inner">
-      <div>
-        <h2>Join the glow list</h2>
-        <p>Get early access, drops, and special offers.</p>
-      </div>
-      <form class="newsletter__form">
-        <input type="email" placeholder="Email address" aria-label="Email address">
-        <button class="btn primary" type="submit">Sign Up</button>
-      </form>
-    </div>
-  </section>
+          <footer class="footer">
+            <div class="footer__row">
+              <div class="footer__small">
+                © 2025 Demo clone (student project)
+              </div>
+              <div class="footer__links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#accessibility">Accessibility</a>
+                <a href="#terms">Terms and Conditions</a>
+                <a href="#health">Consumer Health Data</a>
+                <a href="#rights">Your Privacy Rights</a>
+              </div>
+            </div>
 
-  <!-- FINAL PHRASE -->
-  <section class="closing">
-    <div class="container closing__inner">
-      <p>“Wellness should feel like a treat.”</p>
-      <h2>Daily supplements you’ll actually crave.</h2>
-      <a class="btn secondary" href="#">Explore the collection</a>
-    </div>
-  </section>
+            <div class="footer__cols">
+              <div class="footer__col">
+                <h4>Learn</h4>
+                <a href="#blog">Blog</a>
+                <a href="#loyalty">Loyalty &amp; Rewards</a>
+                <a href="#subscribe">Subscribe</a>
+                <a href="#influencer">Influencer</a>
+              </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <div class="logo">
-          <span class="logo__dot"></span>
-          <span class="logo__text">lemme</span>
+              <div class="footer__col">
+                <h4>Get Help</h4>
+                <a href="#faq">Help/FAQ</a>
+                <a href="#contact">Contact us</a>
+                <a href="#find">Find Us</a>
+                <a href="#iherb">Shop iHerb</a>
+              </div>
+            </div>
+
+            <p class="disclaimer">
+              * These statements have not been evaluated by the Food and Drug Administration. This product is not intended to
+              diagnose, treat, cure or prevent any disease.
+            </p>
+          </footer>
         </div>
-        <p>Daily wellness made delicious.</p>
-      </div>
-      <div>
-        <h4>Shop</h4>
-        <ul>
-          <li><a href="#">All products</a></li>
-          <li><a href="#">Bundles</a></li>
-          <li><a href="#">Subscriptions</a></li>
-          <li><a href="#">Gift cards</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">Our story</a></li>
-          <li><a href="#">Science</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Help</h4>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Follow</h4>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <span>© 2024 Lemme. All rights reserved.</span>
-      <div>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-      </div>
-    </div>
-  </footer>
-</body>
+      </section>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        const m = document.getElementById("mobile");
+        m.hidden = !m.hidden;
+      }
+      function showThanks() {
+        const t = document.getElementById("thanks");
+        t.hidden = false;
+        clearTimeout(window.__t);
+        window.__t = setTimeout(() => (t.hidden = true), 2200);
+      }
+    </script>
+  </body>
 </html>
+
