@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -21,10 +22,14 @@
       <span>FREE SHIPPING OVER $50</span>
       <span class="dot">•</span>
       <span>subscribe & save up to 35% off</span>
+      <span>subscribe &amp; save up to 35%</span>
+      <span class="dot">•</span>
+      <span>clinically studied ingredients</span>
       <span class="dot">•</span>
       <span>FREE SHIPPING OVER $50</span>
       <span class="dot">•</span>
       <span>subscribe & save up to 35% off</span>
+      <span>subscribe &amp; save up to 35%</span>
     </div>
   </div>
 
@@ -42,11 +47,26 @@
         <a>Women's Health</a>
         <a>Beauty & Digestion</a>
         <a class="nav__cta">Build a Bundle</a>
+        <a href="#">Mood, Sleep, Energy</a>
+        <a href="#">Weight Management</a>
+        <a href="#">Women’s Health</a>
+        <a href="#">Beauty &amp; Digestion</a>
+        <a class="nav__cta" href="#">Build a Bundle</a>
       </nav>
 
       <div class="header__right">
         <span>Bag</span>
         <span class="bag">0</span>
+        <button class="icon-button" aria-label="Search">
+          <span>Search</span>
+        </button>
+        <button class="icon-button" aria-label="Account">
+          <span>Account</span>
+        </button>
+        <div class="bag-pill">
+          <span>Bag</span>
+          <span class="bag-count">0</span>
+        </div>
       </div>
     </div>
   </header>
@@ -58,57 +78,441 @@
       <div class="hero__text">
         <span class="hero__meet">MEET</span>
         <h1>lemme Burn Gummies</h1>
+        <div class="hero__chips">
+          <span class="pill">New</span>
+          <span class="pill pill--outline">Best Seller</span>
+        </div>
+        <span class="hero__meet">MEET LEMME BURN</span>
+        <h1>Gummies to support body composition + energy.</h1>
         <p>
           Clinically-studied ingredients to support healthy body composition
           and energy—without sacrificing taste.*
+          and sustained energy—without sacrificing taste.*
         </p>
 
         <div class="hero__buttons">
           <a class="btn primary">Shop Now</a>
           <a class="btn secondary">Learn More</a>
+          <a class="btn primary" href="#">Shop Now</a>
+          <a class="btn secondary" href="#">Learn More</a>
         </div>
 
         <div class="hero__badges">
           <span>3rd-party tested</span>
           <span>No FD&C dyes</span>
+          <span>No FD&amp;C dyes</span>
           <span>So delicious</span>
         </div>
       </div>
 
       <div class="hero__image">
         <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80" alt="Product">
+        <div class="hero__circle"></div>
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80" alt="Lemme Burn Gummies">
         <div class="product__label">
           <strong>BURN</strong>
           <span>Body composition gummies*</span>
+          <div>
+            <strong>BURN</strong>
+            <span>Body composition gummies*</span>
+          </div>
           <span class="price">From $30</span>
         </div>
+        <div class="stat-grid">
+          <div>
+            <strong>6g</strong>
+            <span>nutrients per serving</span>
+          </div>
+          <div>
+            <strong>30</strong>
+            <span>gummies per jar</span>
+          </div>
+          <div>
+            <strong>4.8 ★</strong>
+            <span>reviews average</span>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
+  <!-- MEDIA MENTIONS -->
+  <section class="logo-strip">
+    <div class="container logo-strip__inner">
+      <span>As seen in</span>
+      <div class="logos">
+        <span>Vogue</span>
+        <span>Forbes</span>
+        <span>Women’s Health</span>
+        <span>Glamour</span>
+        <span>MindBodyGreen</span>
+        <span>Goop</span>
+      </div>
     </div>
   </section>
 
   <!-- RESULTS -->
   <section class="results">
+  <!-- FAVORITES -->
+  <section class="best-sellers">
     <div class="container">
       <h2>lemme get real results</h2>
       <p class="subtitle">The twist? So delicious you won’t believe they’re supplements.</p>
+      <div class="section-head">
+        <h2>Fan-favorite gummies</h2>
+        <a href="#" class="text-link">Shop all gummies</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <span class="pill pill--outline">New</span>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80" alt="Lemme Burn gummies">
+          </div>
+          <h3>Lemme Burn</h3>
+          <p>Metabolism + energy gummies.</p>
+          <div class="product-card__meta">
+            <span>$30</span>
+            <button class="btn tiny">Add</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <span class="pill pill--outline">Best seller</span>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Lemme Sleep gummies">
+          </div>
+          <h3>Lemme Sleep</h3>
+          <p>Dreamy gummies for deep rest.</p>
+          <div class="product-card__meta">
+            <span>$30</span>
+            <button class="btn tiny">Add</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <span class="pill pill--outline">Bloat helper</span>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Lemme Debloat gummies">
+          </div>
+          <h3>Lemme Debloat</h3>
+          <p>Gut support you can taste.</p>
+          <div class="product-card__meta">
+            <span>$30</span>
+            <button class="btn tiny">Add</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <span class="pill pill--outline">Trending</span>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=700&q=80" alt="Lemme Focus gummies">
+          </div>
+          <h3>Lemme Focus</h3>
+          <p>Sharper focus and clarity.</p>
+          <div class="product-card__meta">
+            <span>$30</span>
+            <button class="btn tiny">Add</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- SHOP BY GOAL -->
+  <section class="goals">
+    <div class="container">
+      <div class="section-head">
+        <h2>Shop by goal</h2>
+        <a href="#" class="text-link">Shop all gummies</a>
+      </div>
+      <div class="goal-grid">
+        <article class="goal-card">
+          <h3>Mood + Stress</h3>
+          <p>Daily calm support you can taste.</p>
+        </article>
+        <article class="goal-card">
+          <h3>Sleep + Recovery</h3>
+          <p>Fall asleep faster, wake refreshed.</p>
+        </article>
+        <article class="goal-card">
+          <h3>Energy + Focus</h3>
+          <p>Plant-powered energy, no crash.</p>
+        </article>
+        <article class="goal-card">
+          <h3>Beauty + Digestion</h3>
+          <p>Glow from the inside out.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results">
+    <div class="container results__grid">
+      <div>
+        <h2>lemme get real results</h2>
+        <p class="subtitle">The twist? So delicious you won’t believe they’re supplements.</p>
+        <div class="results__stats">
+          <div>
+            <strong>4.8/5</strong>
+            <span>average rating</span>
+          </div>
+          <div>
+            <strong>500k+</strong>
+            <span>happy customers</span>
+          </div>
+          <div>
+            <strong>3rd party</strong>
+            <span>clinically studied</span>
+          </div>
+        </div>
+        <a class="btn secondary" href="#">See the science</a>
+      </div>
       <div class="cards">
         <div class="card">
           <img src="https://images.unsplash.com/photo-1582719478185-2f95b9b7b902?auto=format&fit=crop&w=600&q=80">
+          <img src="https://images.unsplash.com/photo-1582719478185-2f95b9b7b902?auto=format&fit=crop&w=600&q=80" alt="Expert formulated">
           <h3>Expert formulated</h3>
         </div>
         <div class="card">
           <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f04b?auto=format&fit=crop&w=600&q=80">
+          <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f04b?auto=format&fit=crop&w=600&q=80" alt="Validated by testing">
           <h3>Validated by 3rd party testing</h3>
         </div>
         <div class="card">
           <img src="https://images.unsplash.com/photo-1556228720-4b58f4b7c84a?auto=format&fit=crop&w=600&q=80">
+          <img src="https://images.unsplash.com/photo-1556228720-4b58f4b7c84a?auto=format&fit=crop&w=600&q=80" alt="Science-backed innovation">
           <h3>Science-backed innovation</h3>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- INGREDIENTS -->
+  <section class="ingredients">
+    <div class="container ingredients__grid">
+      <div>
+        <span class="pill">Ingredients</span>
+        <h2>Clinically studied, clean, and delicious.</h2>
+        <p>Every gummy is packed with real nutrients and zero synthetic dyes.</p>
+        <div class="ingredient-list">
+          <div>
+            <strong>Chromax®</strong>
+            <span>Supports healthy metabolism</span>
+          </div>
+          <div>
+            <strong>Sinetrol®</strong>
+            <span>Clinically studied citrus polyphenols</span>
+          </div>
+          <div>
+            <strong>Vitamin B12</strong>
+            <span>Helps convert food to energy</span>
+          </div>
+        </div>
+      </div>
+      <div class="ingredient-card">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" alt="Ingredients lifestyle">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S NOT INSIDE -->
+  <section class="clean">
+    <div class="container clean__grid">
+      <div>
+        <span class="pill">What we leave out</span>
+        <h2>Gummies without the junk.</h2>
+        <p>No fillers, no artificial flavors, and nothing you can’t pronounce.</p>
+      </div>
+      <div class="clean__list">
+        <div>
+          <strong>No gelatin</strong>
+          <span>Vegan-friendly formulas.</span>
+        </div>
+        <div>
+          <strong>No artificial dyes</strong>
+          <span>Just naturally derived colors.</span>
+        </div>
+        <div>
+          <strong>No added sugar</strong>
+          <span>Balanced sweetness from fruit.</span>
+        </div>
+        <div>
+          <strong>No fillers</strong>
+          <span>Only purposeful ingredients.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUNDLE -->
+  <section class="bundle">
+    <div class="container bundle__grid">
+      <div>
+        <span class="pill">Bundle &amp; Save</span>
+        <h2>Build your daily routine.</h2>
+        <p>Mix and match your favorite gummies. Save up to 35% when you subscribe.</p>
+        <a class="btn primary" href="#">Build a Bundle</a>
+      </div>
+      <div class="bundle__image">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Gummy assortment">
+        <div class="bundle__tag">3+ products = 35% off</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps">
+    <div class="container">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <a href="#" class="text-link">Learn more</a>
+      </div>
+      <div class="step-grid">
+        <article>
+          <span class="step-number">01</span>
+          <h3>Choose your gummies</h3>
+          <p>Pick the formulas that match your goals.</p>
+        </article>
+        <article>
+          <span class="step-number">02</span>
+          <h3>Build a bundle</h3>
+          <p>Save more when you add two or more products.</p>
+        </article>
+        <article>
+          <span class="step-number">03</span>
+          <h3>Subscribe + save</h3>
+          <p>Get deliveries on your schedule and never run out.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <div class="container">
+      <div class="section-head">
+        <h2>Lemme lovers</h2>
+        <a href="#" class="text-link">Read all reviews</a>
+      </div>
+      <div class="review-grid">
+        <article class="review">
+          <div class="review__rating">★★★★★</div>
+          <h3>“I feel lighter and energized.”</h3>
+          <p>“After two weeks I’m less bloated and have steady energy.”</p>
+          <span class="review__name">— Samantha</span>
+        </article>
+        <article class="review">
+          <div class="review__rating">★★★★★</div>
+          <h3>“The taste is unreal.”</h3>
+          <p>“Best tasting gummies I’ve tried. Fits into my routine.”</p>
+          <span class="review__name">— Liz</span>
+        </article>
+        <article class="review">
+          <div class="review__rating">★★★★☆</div>
+          <h3>“My new nightly ritual.”</h3>
+          <p>“Takes the edge off and helps me wind down.”</p>
+          <span class="review__name">— Ana</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="promo">
+    <div class="container promo__inner">
+      <div>
+        <span class="pill">Subscribe</span>
+        <h2>Subscribe + save up to 35%.</h2>
+        <p>Flexible delivery, cancel anytime, and free shipping on every order.</p>
+      </div>
+      <a class="btn secondary" href="#">Start subscription</a>
+    </div>
+  </section>
+
+  <!-- DISCOUNT -->
+  <section class="discount">
+    <div class="container discount__inner">
+      <div>
+        <span class="pill pill--outline">Limited time</span>
+        <h2>Get 15% off your first order.</h2>
+        <p>Use code LEMMELOVE at checkout.</p>
+      </div>
+      <a class="btn primary" href="#">Shop now</a>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <div>
+        <h2>Join the glow list</h2>
+        <p>Get early access, drops, and special offers.</p>
+      </div>
+      <form class="newsletter__form">
+        <input type="email" placeholder="Email address" aria-label="Email address">
+        <button class="btn primary" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FINAL PHRASE -->
+  <section class="closing">
+    <div class="container closing__inner">
+      <p>“Wellness should feel like a treat.”</p>
+      <h2>Daily supplements you’ll actually crave.</h2>
+      <a class="btn secondary" href="#">Explore the collection</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">
+          <span class="logo__dot"></span>
+          <span class="logo__text">lemme</span>
+        </div>
+        <p>Daily wellness made delicious.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">All products</a></li>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Subscriptions</a></li>
+          <li><a href="#">Gift cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Our story</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 Lemme. All rights reserved.</span>
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
